@@ -1,0 +1,19 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 16px;
+    color: black;
+}.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left img {
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
