@@ -11,10 +11,34 @@
         <div class="header" id="myHeader">
             <div class="header-left">
                 <img src="assets/logos/studenthub.png" alt="logo" onclick="window.location.href='index.html'">
-
             </div>
-
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="#">Beauty services</a>
+                        <a href="#">Catering services</a>
+                        <a href="buy-sell.html">Buy and sell</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Accommodations</button>
+                    <div class="dropdown-content">
+                        <a href="booking.html">Bookings</a>
+                        <a href="flats.html">Flats</a>
+                        <a href="selfcons.html">Selfcons</a>
+                        <a href="singlerooms.html">Singles</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#info-section">FAQs</a>
+                <a class="nav-link" href="register.html">Sign Up</a>
+                <a class="nav-link" href="signin.html">Log In</a>
+            </div>
         </div>
     </header>   
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

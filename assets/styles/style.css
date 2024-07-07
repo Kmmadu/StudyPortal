@@ -1,3 +1,12 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
 /* Header Styles */
 .header {
     display: flex;
@@ -6,14 +15,123 @@
     background-color: white;
     padding: 10px 16px;
     color: black;
-}.header-left {
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid #ddd;
 }
+
 .header-left img {
     height: 50px;
     margin-right: 10px;
     cursor: pointer;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+}
 
+.header-right .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.header-right .nav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.header-right .dropbtn {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-right .dropbtn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media Queries */
+.menu-toggle {
+    display: none; /* Hide toggle button by default */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button on mobile */
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header-left img {
+        height: 40px; /* Adjust logo size for mobile */
+    }
+
+    .header-right {
+        display: none; /* Hide the right part of the header on mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .header-right.active {
+        display: flex;
+    }
+
+    .header-right .nav-link, .header-right .dropbtn {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+    }
+
+    .header-right .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: white;
+        width: 100%;
+    }
+}
