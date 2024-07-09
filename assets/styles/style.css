@@ -196,6 +196,9 @@ h3 {
     .welcome-section .container {
         flex-direction: column;
     }
+    .image-box img{
+        display: none;
+    }
 
     .welcome-section .grid {
         flex-direction: column;
@@ -208,7 +211,7 @@ h3 {
 
 /* Footer Styles */
 footer {
-    background-color: darkslategray;
+    background-color: rgb(25, 27, 27);
     color: gray;
     padding: 20px 0;
 }
