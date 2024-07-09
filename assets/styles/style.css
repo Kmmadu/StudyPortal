@@ -208,6 +208,62 @@ h3 {
         text-align: center;
     }
 }
+/* Explore Section Styles */
+.explore-section {
+    background-color: #f0f0f0; /* Grey background */
+    padding: 40px 0;
+}
+
+.explore-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.explore-section .text-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.explore-section .image-container {
+    display: flex;
+    justify-content: space-between; /* Ensure images are evenly spaced */
+    gap: 10px; /* Reduce gap between boxes */
+    flex-wrap: wrap;
+}
+
+.explore-section .explore-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(25% - 10px); /* Four items per row with reduced gap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.explore-section .explore-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.explore-section .explore-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.explore-section .explore-box p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .explore-section .explore-box {
+        width: calc(50% - 10px); /* Adjust for 2 by 2 grid on mobile */
+    }
+}
+
 
 /* Footer Styles */
 footer {
