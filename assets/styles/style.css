@@ -146,6 +146,36 @@ h3 {
     }
 }
 
+/* Main Section Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, .about-section h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* Welcome Section Styles */
 .welcome-section .container {
     display: flex;
@@ -264,6 +294,74 @@ h3 {
     }
 }
 
+/* "Why Choose Us" Section Styles */
+.why-choose-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.why-choose-us .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.why-choose-us .info-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.why-choose-us .info-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.why-choose-us .info-box h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.why-choose-us .info-box p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+/* Information Section */
+.info-section {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .info-section .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
+
 
 /* Footer Styles */
 footer {
@@ -279,6 +377,10 @@ footer .container {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 20px;
+}
+.footer-section h4 {
+    margin-top: 0;
+    color: white; /* Set h4 color to white */
 }
 
 .footer-content {
@@ -306,17 +408,17 @@ footer .container {
 }
 
 .footer-section ul li a {
-    color: white;
+    color:gray;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ddd;
+    color: white;
 }
 
 .footer-section .socials a {
-    color: white;
+    color: gray;
     margin-right: 10px;
     font-size: 20px;
     transition: color 0.3s;
