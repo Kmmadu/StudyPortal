@@ -175,6 +175,34 @@ main {
     flex-direction: column;
     gap: 20px;
 }
+/* Background Image Section Styles */
+.background-section {
+    background-image: url('../images/welcome_image.jpg'); /* Use the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+.background-section .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Add an overlay for better text readability */
+    padding: 60px 20px;
+}
+
+.background-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.background-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 
 /* Welcome Section Styles */
 .welcome-section .container {
@@ -238,6 +266,7 @@ main {
         text-align: center;
     }
 }
+
 /* Explore Section Styles */
 .explore-section {
     background-color: #f0f0f0; /* Grey background */
@@ -331,6 +360,131 @@ main {
     color: #666;
     margin-top: 10px;
 }
+
+/* Trust Signals Section Styles */
+.trust-signals {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.trust-signals .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trust-signals .logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.trust-signals .logos img {
+    max-width: 100px;
+    height: auto;
+}
+
+.trust-signals .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trust-signals blockquote {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #333;
+    text-align: center;
+}
+
+.trust-signals cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #666;
+}
+
+/* Newsletter Signup Section Styles */
+.newsletter-signup {
+    background-color: #f9f9f9; /* Subtle background color */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.newsletter-signup .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-signup h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.newsletter-signup p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.newsletter-signup input[type="email"] {
+    width: calc(100% - 130px); /* Adjusted width for better spacing */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.newsletter-signup input[type="email"]:focus {
+    border-color: #333; /* Highlight input on focus */
+    outline: none;
+}
+
+.newsletter-signup button {
+    padding: 15px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter-signup button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+@media (max-width: 768px) {
+    .newsletter-signup input[type="email"] {
+        width: calc(100% - 110px); /* Adjust width for smaller screens */
+    }
+
+    .newsletter-signup button {
+        width: 100%; /* Full width button on mobile */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}
+
+
+.newsletter-signup button:hover {
+    background-color: #555;
+}
+
 /* Information Section */
 .info-section {
     padding: 50px 20px;
@@ -361,7 +515,6 @@ main {
 .info-box h2 {
     margin-top: 0;
 }
-
 
 /* Footer Styles */
 footer {
