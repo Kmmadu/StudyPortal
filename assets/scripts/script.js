@@ -11,7 +11,3 @@ document.addEventListener('DOMContentLoaded', function() {
         headerRight.style.display = e.matches ? 'none' : 'flex';
     });
 });
-function toggleMenu() {
-    var headerRight = document.querySelector('.header-right');
-    headerRight.classList.toggle('active');
-}
