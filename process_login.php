@@ -11,6 +11,7 @@ if ($result->num_rows > 0) {
     $user = $result->fetch_assoc();
     if (password_verify($password, $user['password'])) {
         echo "Login successful";
+        header("Location: index.html");
     } else {
         echo "Invalid password";
     }

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "your_db_username";
-$password = "your_db_password";
+$username = "codeak";
+$password = "5334";
 $dbname = "studenthub";
 
 // Create connection
