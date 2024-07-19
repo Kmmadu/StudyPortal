@@ -1,4 +1,5 @@
 <?php
+// hybridauth_config.php
 return [
     'callback' => 'http://localhost/studenthub/hybridauth.php',
     'providers' => [

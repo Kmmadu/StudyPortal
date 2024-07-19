@@ -1,12 +1,17 @@
 -- creating the database
-create database studentportal;
-use studentportal;
+CREATE DATABASE studenthub;
+USE studenthub;
 
 -- table users
-create table users (
-     id int AUTO_INCREMENT PRIMARY KEY,
-     username varchar(255) not null unique,
-     email varchar(255) not null unique,
-     password varchar(255) not null
-     );
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
 
+-- table auth_providers
+CREATE TABLE auth_providers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    provider_name VARCHAR(255) NOT NULL
+);

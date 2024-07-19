@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "codeak";
-$password = "5334";
-$dbname = "studenthub";
+$username = "your_db_username";
+$password = "your_db_password";
+$dbname = "your_db_name";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

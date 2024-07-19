@@ -1,6 +1,7 @@
 <?php
 require 'db_connect.php';
 require 'vendor/autoload.php';
+session_start();
 
 try {
     $config = require 'hybridauth_config.php';
@@ -37,12 +38,19 @@ try {
         // Register the user
         $sql = "INSERT INTO users (username, email, auth_provider, auth_provider_id) VALUES ('" . $userProfile->displayName . "', '" . $userProfile->email . "', $provider_id, '" . $userProfile->identifier . "')";
         if ($conn->query($sql) === TRUE) {
+            $_SESSION['user_id'] = $conn->insert_id;
+            $_SESSION['username'] = $userProfile->displayName;
             echo "User registered successfully with Google";
+            header("Location: index.html");
         } else {
             throw new Exception('Error inserting user: ' . $conn->error);
         }
     } else {
+        $user = $result->fetch_assoc();
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
         echo "User logged in successfully with Google";
+        header("Location: index.html");
     }
 
     $adapter->disconnect();
