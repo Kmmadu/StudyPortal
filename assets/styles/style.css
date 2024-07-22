@@ -452,24 +452,20 @@ main {
 
 /* Newsletter Signup Section Styles */
 .newsletter-signup {
-    background-color: #f9f9f9; /* Subtle background color */
-    padding: 60px 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.newsletter-signup .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .newsletter-signup h2 {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333;
+    color: black;
 }
 
 .newsletter-signup p {
@@ -478,52 +474,54 @@ main {
     color: #666;
 }
 
+.newsletter-signup .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .newsletter-signup input[type="email"] {
-    width: calc(100% - 130px); /* Adjusted width for better spacing */
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-size: 1em;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 10px;
     transition: border-color 0.3s;
 }
 
 .newsletter-signup input[type="email"]:focus {
-    border-color: #333; /* Highlight input on focus */
+    border-color: #333;
     outline: none;
 }
 
 .newsletter-signup button {
-    padding: 15px 25px;
-    background-color: #333;
-    color: white;
+    padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
     transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
 }
 
 .newsletter-signup button:hover {
-    background-color: #555;
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    background-color: #333;
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .newsletter-signup input[type="email"] {
-        width: calc(100% - 110px); /* Adjust width for smaller screens */
+        width: calc(100% - 20px);
     }
 
     .newsletter-signup button {
-        width: 100%; /* Full width button on mobile */
-        margin-top: 10px; /* Add margin for spacing */
+        width: 100%;
+        margin-top: 10px;
     }
 }
 
-
-.newsletter-signup button:hover {
-    background-color: #555;
-}
 
 /* Information Section */
 .info-section {
@@ -738,4 +736,47 @@ footer p {
 
 .social-button.google:hover {
     background-color: #c23321;
+}
+/* Search Container Styles */
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color:gray;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background-color: #333;
 }
