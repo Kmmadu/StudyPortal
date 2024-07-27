@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Community</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="myHeader">
+            <div class="header-left">
+                <img src="assets/logos/studenthub.png" alt="logo" onclick="window.location.href='index.html'">
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="nav-link back-button">
+                    <i class="fas fa-arrow-left"></i> Back
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="community-section">
+            <div class="container">
+                <h2>StudentHub Community</h2>
+                <div id="chat-container">
+                    <div id="messages"></div>
+                </div>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Type your message" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

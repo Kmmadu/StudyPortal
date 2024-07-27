@@ -780,3 +780,96 @@ footer p {
 .search-box button:hover {
     background-color: #333;
 }
+/* Community Styling */
+.community-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; /* Add margin to offset fixed header */
+}
+
+#chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#message-form {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#message-form button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+#message-form button:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-right .back-button {
+        font-size: 14px;
+    }
+
+    #chat-container {
+        padding: 10px;
+    }
+
+    #message-form {
+        flex-direction: column;
+    }
+
+    #message-input, #message-form button {
+        border-radius: 4px;
+        margin: 5px 0;
+    }
+}
