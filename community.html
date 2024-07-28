@@ -15,23 +15,20 @@
                 <img src="assets/logos/studenthub.png" alt="logo" onclick="window.location.href='index.html'">
             </div>
             <div class="header-right">
-                <a href="index.html" class="nav-link back-button">
-                    <i class="fas fa-arrow-left"></i> Back
-                </a>
+                <a class="nav-link" href="index.html">Back</a>
             </div>
         </div>
     </header>
     <main>
         <section class="community-section">
             <div class="container">
-                <h2>StudentHub Community</h2>
                 <div id="chat-container">
                     <div id="messages"></div>
+                    <form id="message-form">
+                        <input type="text" id="message-input" placeholder="Type your message" required>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-                <form id="message-form">
-                    <input type="text" id="message-input" placeholder="Type your message" required>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </section>
     </main>
