@@ -782,25 +782,24 @@ footer p {
 }
 /* Community Styling */
 .community-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px; /* Add margin to offset fixed header */
+    
+    background-image: url('../images/community_pic.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    opacity: .5;
 }
 
+/* Chat container styling to keep messages legible against the background */
 #chat-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    max-width: 67rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px; /* Add top margin to prevent initial messages from being hidden behind the header */
 }
 
 #messages {
@@ -881,12 +880,29 @@ footer p {
     }
 
     #message-form {
-        flex-direction: column;
-        padding: 5px;
+        flex-direction: row; /* Keep the direction as row */
     }
 
-    #message-input, #message-form button {
-        border-radius: 4px;
-        margin: 5px 0;
+    #message-input {
+        flex: 1;
+        border-radius: 4px 0 0 4px;
     }
+
+    #message-form button {
+        border-radius: 0 4px 4px 0;
+        margin-left: 5px; /* Ensure there's a small gap between input and button */
+    }
+}
+
+/* Ensure the back button is visible */
+.right-side .header .toggle-button i {
+    position: absolute;
+    font-size: 1.8rem;
+    transition: all .3s ease-in-out;
+    color: #000; /* Ensure the icon is visible */
+}
+
+.right-side .header .toggle-button .fa-arrow-left {
+    visibility: visible;
+    opacity: 1;
 }
