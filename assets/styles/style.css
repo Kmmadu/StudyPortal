@@ -799,8 +799,8 @@ footer p {
     position: relative;
     max-width: 67rem;
     margin: 0 auto;
-    padding-top: 70px; /* Adjust this value based on the height of your header */
-    height: calc(100vh - 70px); /* Adjust the height to fill the screen */
+    padding-top: 60px; /* Adjust this value based on the height of your header */
+    height: calc(100vh - 60px); /* Adjust the height to fill the screen */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -811,6 +811,8 @@ footer p {
     overflow-y: auto;
     margin-bottom: 20px;
     padding-bottom: 80px; /* Add padding to the bottom */
+    width: 100%; /* Ensure it takes the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .message {
@@ -848,6 +850,7 @@ footer p {
     padding: 10px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 #message-input {
@@ -855,6 +858,7 @@ footer p {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
+    margin-right: 5px; /* Ensure there's a small gap between input and button */
 }
 
 #message-form button {
