@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 70px;
+    height: 100%;
 }
 
 h1 {
@@ -782,30 +783,34 @@ footer p {
 }
 /* Community Styling */
 .community-section {
-    
-    background-image: url('../images/community_pic.jpg');
-    position: absolute;
+    background: url('../images/community_pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: contain;
-    opacity: .5;
+    opacity: 0.5;
+    z-index: -1; /* Ensure it stays behind the content */
 }
 
 /* Chat container styling to keep messages legible against the background */
 #chat-container {
     position: relative;
     max-width: 67rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px; /* Add top margin to prevent initial messages from being hidden behind the header */
+    margin: 0 auto;
+    padding-top: 70px; /* Adjust this value based on the height of your header */
+    height: calc(100vh - 70px); /* Adjust the height to fill the screen */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 #messages {
     flex: 1;
     overflow-y: auto;
     margin-bottom: 20px;
+    padding-bottom: 80px; /* Add padding to the bottom */
 }
 
 .message {
@@ -877,32 +882,23 @@ footer p {
 
     #chat-container {
         padding: 10px;
+        padding-top: 60px; /* Adjust this value based on the height of your header */
+        height: calc(100vh - 60px); /* Adjust the height to fill the screen */
     }
 
     #message-form {
-        flex-direction: row; /* Keep the direction as row */
+        flex-direction: row; /* Change to row to keep the button on the right side */
+        padding: 5px;
     }
 
     #message-input {
         flex: 1;
         border-radius: 4px 0 0 4px;
+        margin-right: 5px; /* Ensure there's a small gap between input and button */
     }
 
     #message-form button {
         border-radius: 0 4px 4px 0;
-        margin-left: 5px; /* Ensure there's a small gap between input and button */
+        margin: 0; /* Ensure no margin for the button */
     }
-}
-
-/* Ensure the back button is visible */
-.right-side .header .toggle-button i {
-    position: absolute;
-    font-size: 1.8rem;
-    transition: all .3s ease-in-out;
-    color: #000; /* Ensure the icon is visible */
-}
-
-.right-side .header .toggle-button .fa-arrow-left {
-    visibility: visible;
-    opacity: 1;
 }

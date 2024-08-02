@@ -32,6 +32,9 @@ document.getElementById('message-form').addEventListener('submit', function(even
     `;
     document.getElementById('messages').appendChild(messageElement);
 
+    // Scroll to the bottom of the messages
+    messageElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
     // Clear the input field after sending the message
     messageInput.value = ''; 
 
@@ -46,6 +49,9 @@ document.getElementById('message-form').addEventListener('submit', function(even
             <img src="assets/icons/profile.png" alt="Profile Icon" class="profile-icon">
         `;
         document.getElementById('messages').appendChild(receivedMessage);
+
+        // Scroll to the bottom of the messages
+        receivedMessage.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }, 1000);
 });
 
