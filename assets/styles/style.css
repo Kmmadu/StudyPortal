@@ -334,9 +334,9 @@ main {
 
 .explore-section .explore-box {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 20px;
-    width: calc(25% - 10px); /* Four items per row with reduced gap */
+    width: calc(20% - 10px); /* Four items per row with reduced gap */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -360,7 +360,7 @@ main {
 
 @media (max-width: 768px) {
     .explore-section .explore-box {
-        width: calc(50% - 10px); /* Adjust for 2 by 2 grid on mobile */
+        width: calc(30% - 10px); /* Adjust for 2 by 2 grid on mobile */
     }
 }
 
