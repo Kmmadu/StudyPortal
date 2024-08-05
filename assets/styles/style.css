@@ -358,11 +358,37 @@ main {
     color: #666;
 }
 
+.explore-section .read-more-btn {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; /* Hide by default */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    .explore-section .image-container {
+        justify-content: center;
+    }
+
     .explore-section .explore-box {
-        width: calc(30% - 10px); /* Adjust for 2 by 2 grid on mobile */
+        width: calc(45% - 10px); /* Adjust for a more compact grid on mobile */
+        margin-bottom: 20px; /* Add space between rows */
+    }
+
+    .explore-section .explore-box p {
+        display: none; /* Hide paragraphs initially on mobile */
+    }
+
+    .explore-section .read-more-btn {
+        display: block; /* Show "Read more" button on mobile */
     }
 }
+
+
 
 /* "Why Choose Us" Section Styles */
 .why-choose-us .container {
