@@ -141,12 +141,18 @@ h3 {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Show toggle button on mobile */
-        background-color: white;
+        background-color: transparent; /* Ensure the button is transparent */
         border: none;
         color: black;
         padding: 10px;
         font-size: 16px;
         cursor: pointer;
+    }
+
+    .menu-toggle:active,
+    .menu-toggle:focus {
+        background-color: transparent; /* Make background transparent on active/focus */
+        outline: none; /* Remove outline */
     }
 
     .header-left img {
@@ -185,8 +191,6 @@ h3 {
         width: 100%;
     }
 }
-
-
 /* Main Section Styles */
 main {
     padding: 40px 20px;
@@ -342,7 +346,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically if needed */
+    justify-content: space-between; /* Ensure the button is at the bottom */
 }
 
 .explore-section .explore-box img {
@@ -364,7 +368,7 @@ main {
 }
 
 .explore-section .read-more-btn {
-    background-color: grey;
+    background-color: gray;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -372,7 +376,6 @@ main {
     cursor: pointer;
     display: none; /* Hide by default */
     margin-top: 10px;
-    align-self: center; /* Center the button */
 }
 
 /* Responsive Design */
