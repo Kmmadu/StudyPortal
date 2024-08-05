@@ -246,9 +246,6 @@ main {
     margin-bottom: 30px;
     font-family: 'Open Sans', sans-serif;
 }
-
-
-
 /* Welcome Section Styles */
 .welcome-section .container {
     display: flex;
@@ -364,13 +361,13 @@ main {
 .explore-section .explore-box p.service-description {
     font-size: 1em;
     color: #666;
-    display: block; /* Display by default on desktop */
+    display: block; /* Show paragraphs by default on desktop */
 }
 
 .explore-section .read-more-link {
     color: black;
     cursor: pointer;
-    display: none; /* Hide by default */
+    display: none; /* Hide by default on desktop */
     margin-top: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -379,7 +376,6 @@ main {
 .read-more-link::after {
     content: ' ➔';
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .explore-section .image-container {
@@ -389,10 +385,6 @@ main {
     .explore-section .explore-box {
         width: calc(90% - 10px); /* Make the boxes wider on mobile */
         margin-bottom: 20px; /* Add space between rows */
-    }
-
-    .explore-section .explore-box p.service-description {
-        display: none; /* Hide paragraphs initially on mobile */
     }
 
     .explore-section .read-more-link {
