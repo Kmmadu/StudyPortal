@@ -367,15 +367,17 @@ main {
     display: block; /* Display by default on desktop */
 }
 
-.explore-section .read-more-btn {
-    background-color: gray;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+.explore-section .read-more-link {
+    color: black;
     cursor: pointer;
     display: none; /* Hide by default */
     margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more-link::after {
+    content: ' ➔';
 }
 
 /* Responsive Design */
@@ -393,8 +395,8 @@ main {
         display: none; /* Hide paragraphs initially on mobile */
     }
 
-    .explore-section .read-more-btn {
-        display: block; /* Show "Read more" button on mobile */
+    .explore-section .read-more-link {
+        display: block; /* Show "Read more" link on mobile */
     }
 }
 /* "Why Choose Us" Section Styles */

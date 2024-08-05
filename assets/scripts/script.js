@@ -61,3 +61,19 @@ function getUsername() {
     // For now, returning a placeholder
     return 'User1';
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreLinks = document.querySelectorAll('.read-more-link');
+
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const description = this.previousElementSibling;
+            if (description.style.display === 'none' || description.style.display === '') {
+                description.style.display = 'block';
+                this.textContent = 'Read less';
+            } else {
+                description.style.display = 'none';
+                this.innerHTML = 'Read more ➔';
+            }
+        });
+    });
+});
