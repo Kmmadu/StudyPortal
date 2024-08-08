@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Buy/Sell - StudentHub</title>
-        <meta name="description" content="Find the perfect student accommodation with StudentHub. Explore a variety of services tailored to student needs, including verified listings, local experiences, and more.">
-        <meta name="keywords" content="student accommodation, student housing, student services, Nigeria, university housing, student portal">
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Shop</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
     <header>
         <div class="header" id="myHeader">
             <div class="header-left">
                 <img src="assets/logos/studenthub.png" alt="logo" onclick="window.location.href='index.html'">
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="header-right">
-                <div class="dropdown">
-                    <button class="dropbtn">Accommodations</button>
-                    <div class="dropdown-content">
-                        <a href="booking.html">Bookings</a>
-                        <a href="flats.html">Flats</a>
-                        <a href="selfcons.html">Selfcons</a>
-                        <a href="singlerooms.html">Singles</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Services</button>
-                    <div class="dropdown-content">
-                        <a href="#">Beauty</a>
-                        <a href="#">Catering</a>
-
-                    </div>
-                </div>
-                
-                <a class="nav-link" href="register.html">Sign Up</a>
-                <a class="nav-link" href="signin.html">Log In</a>
-                <a class="nav-link" href="sell.html" >Sell</a>
+                <img src="assets/icons/profile.png" alt="Profile" onclick="window.location.href='login.html'" class="profile-icon">
             </div>
         </div>
     </header>
-
     <main>
+        <!-- Search Container -->
         <section class="search-container">
-            <h1>Find anything on campus</h1>
+            <h1>Search Products</h1>
             <div class="search-box">
-                <input type="text" placeholder="I am looking for...">
-                <button aria-label="Search"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search for products...">
+                <button type="submit">Search</button>
             </div>
         </section>
-        <!-- Additional content for the buy/sell page -->
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>About Us</h4>
-                    <p>StudentHub is your ultimate destination for student accommodation, property, and services. We aim to make university life easier and more enjoyable for students across Nigeria.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>Email: support@studenthub.com</p>
-                    <p>Phone: +234 123 456 7890</p>
-                    <div class="socials">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Category Icons Section -->
+        <section class="category-section">
+            <div class="container">
+                <div class="category-icons">
+                    <div class="category-icon">
+                        <img src="assets/icons/phone.png" alt="Phones">
+                        <p>Phones</p>
                     </div>
+                    <div class="category-icon">
+                        <img src="assets/icons/vehicle.png" alt="Vehicles">
+                        <p>Vehicles</p>
+                    </div>
+                    <!-- Add more categories as needed -->
                 </div>
             </div>
+        </section>
+        <!-- Trending Ads Section -->
+        <section class="trending-section">
+            <div class="container">
+                <h2>Trending Ads</h2>
+                <div class="trending-ads">
+                    <div class="ad">
+                        <img src="assets/images/product1.jpg" alt="Product 1">
+                        <p>Product 1</p>
+                    </div>
+                    <div class="ad">
+                        <img src="assets/images/product2.jpg" alt="Product 2">
+                        <p>Product 2</p>
+                    </div>
+                    <!-- Add more trending ads as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Mobile Navigation Icons -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <img src="assets/icons/home.png" alt="logo" onclick="window.location.href='index.html'">
+            <p>Home</p>
         </div>
-    </footer>
+        <div class="mobile-nav-icon">
+            <img src="assets/icons/sell.png" alt="Sell">
+            <p>Sell</p>
+        </div>
+        <div class="mobile-nav-icon">
+            <img src="assets/icons/messages.png" alt="logo" onclick="window.location.href='community.html'">
+            <p>Messages</p>
+        </div>
+        <div class="mobile-nav-icon">
+            <img src="assets/icons/profile.png" alt="logo" onclick="window.location.href='signin.html'">
+            <p>Profile</p>
+        </div>
+    </div>
 
     <script src="assets/scripts/script.js"></script>
 </body>

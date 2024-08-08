@@ -156,7 +156,7 @@ h3 {
     }
 
     .header-left img {
-        height: 30px; /* Adjust logo size for mobile */
+        height: 25px; /* Adjust logo size for mobile */
     }
 
     .header-right {
@@ -765,49 +765,6 @@ footer p {
 .social-button.google:hover {
     background-color: #c23321;
 }
-/* Search Container Styles */
-.search-container {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.search-container h1 {
-    margin-bottom: 20px;
-    color: black;
-}
-
-.search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-box input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    width: 70%;
-    font-size: 16px;
-}
-
-.search-box button {
-    padding: 10px 15px;
-    border: none;
-    background-color:gray;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 16px;
-}
-
-.search-box button:hover {
-    background-color: #333;
-}
 /* Community Styling */
 .community-section {
     background: url('../images/community_pic.jpg') no-repeat center center fixed;
@@ -931,5 +888,158 @@ footer p {
     #message-form button {
         border-radius: 0 4px 4px 0;
         margin: 0; /* Ensure no margin for the button */
+    }
+}
+/*Shop page*/
+/* Search Container Styles */
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-container h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background-color: #333;
+}
+
+/* Category Icons Section */
+.category-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.category-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-icon {
+    text-align: center;
+    margin: 10px;
+}
+
+.category-icon img {
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.category-icon p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Trending Ads Section */
+.trending-section {
+    padding: 20px 0;
+}
+
+.trending-section .container {
+    text-align: center;
+}
+
+.trending-ads {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trending-ads .ad {
+    text-align: center;
+    margin: 10px;
+}
+
+.trending-ads .ad img {
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.trending-ads .ad p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0; /* Reduced padding */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav-icon {
+    text-align: center;
+}
+
+.mobile-nav-icon img {
+    height: 30px;
+    margin-bottom: 2px; /* Reduced margin */
+}
+
+.mobile-nav-icon p {
+    margin: 0;
+    font-size: 0.75em;
+    color: black; /* Text color black */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-right .profile-icon {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-right .profile-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
     }
 }
