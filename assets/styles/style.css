@@ -935,27 +935,42 @@ footer p {
 .search-box button:hover {
     background-color: #333;
 }
-
 /* Category Icons Section */
 .category-section {
     padding: 20px 0;
     background-color: #f9f9f9;
 }
 
+.category-header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .category-icons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three icons per row on desktop */
+    gap: 20px; /* Space between boxes */
+    justify-items: center;
 }
 
 .category-icon {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .category-icon img {
     height: 60px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-icon img:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
 }
 
 .category-icon p {
@@ -963,6 +978,21 @@ footer p {
     margin: 0;
 }
 
+.category-icon a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+     .category-icon {
+        flex-basis: calc(33.333% - 10px); /* Still three icons per row, smaller gap */
+    }
+
+    .category-icon img {
+        height: 30px; /* Adjust icon size for mobile */
+    }
+}
 /* Trending Ads Section */
 .trending-section {
     padding: 20px 0;
