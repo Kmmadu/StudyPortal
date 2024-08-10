@@ -996,33 +996,80 @@ footer p {
 /* Trending Ads Section */
 .trending-section {
     padding: 20px 0;
+    background-color: #f9f9f9;
 }
 
 .trending-section .container {
     text-align: center;
 }
 
+.trending-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
 .trending-ads {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three ads per row on desktop */
+    gap: 20px; /* Space between ads */
 }
 
-.trending-ads .ad {
-    text-align: center;
-    margin: 10px;
+.ad {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.trending-ads .ad img {
-    height: 150px;
-    margin-bottom: 5px;
+.ad:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
-.trending-ads .ad p {
+.ad-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ad-details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.ad-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.product-name {
+    font-weight: bold;
     font-size: 1em;
-    margin: 0;
 }
 
+.product-location, .product-price, .product-condition {
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trending-ads {
+        grid-template-columns: repeat(2, 1fr); /* Two ads per row on mobile */
+    }
+
+    .ad {
+        padding: 10px;
+    }
+
+    .product-name {
+        font-size: 0.9em;
+    }
+
+    .product-location, .product-price, .product-condition {
+        font-size: 0.75em;
+    }
+}
 /* Mobile Navigation */
 .mobile-nav {
     display: none;
